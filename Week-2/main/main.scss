@@ -92,6 +92,8 @@ header {
       right: 0px;
       padding-right: 25px;
       z-index: 1;
+      overflow: scroll;
+      // overflow-wrap: revert-layer;
       h2 {
         letter-spacing: 5px;
         line-height: 1.8;
