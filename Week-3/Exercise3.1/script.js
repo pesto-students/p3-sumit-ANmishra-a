@@ -10,6 +10,7 @@ const memoize = function (reducer) {
       return cache.get(key);
     } else {
       const result = reducer(inputs);
+      cache.set(key, result);
       return result;
     }
   };
