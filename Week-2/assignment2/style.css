@@ -21,23 +21,27 @@ h1 {
   position: absolute;
   top: 50%;
 }
+
+.right--lower:hover {
+  animation: moveLeft 3000ms;
+}
+.right--upper:hover {
+  animation: moveRight 3000ms;
+}
+.left--upper:hover {
+  animation: moveLeft 3000ms;
+}
+.left--lower:hover {
+  animation: moveRight 3000ms;
+}
 .right--upper {
   background-color: green;
   top: 0px;
   left: 0px;
-  /* translate: transform rotate(90deg); */
   transform-origin: top left;
-  transition-timing-function: ease-out;
-  transition: all 3000ms;
 }
-/* .right--upper:hover {
-  translate: transform rotate(90deg);
-  transform-origin: top left;
-} */
 .right--lower {
   background-color: rgb(245, 6, 6);
-  bottom: 0px;
-  left: 0px;
   transform-origin: bottom left;
   transition: all 3000ms;
 }
@@ -57,15 +61,20 @@ h1 {
   transition: all 3000ms;
 }
 
-.container .right--upper:hover {
-  transform: rotate(90deg);
+@keyframes moveLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
 }
-.container .left--upper:hover {
-  transform: rotate(-90deg);
-}
-.container .right--lower:hover {
-  transform: rotate(-90deg);
-}
-.container .left--lower:hover {
-  transform: rotate(90deg);
+
+@keyframes moveRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }

@@ -9,5 +9,4 @@ class Person {
 }
 const teacher = new Person();
 
-const anuj = new Person("anuj");
-console.log(anuj.teach("science"));
+console.log(anuj.teach(science));

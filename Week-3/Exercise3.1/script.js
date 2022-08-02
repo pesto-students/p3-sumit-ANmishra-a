@@ -37,7 +37,7 @@ function multiply(args) {
   return args.reduce((acc, current) => (acc *= current), 1);
 }
 const memoizeAdd = memoize(add);
-console.log(memoizeAdd(1, 2, 3, 4));
+console.log(memoizeAdd(1, 2, 3, 4)); //[1-2-3-4]
 console.log(memoizeAdd(1, 2, 3, 4));
 console.log(memoizeAdd(1, 2, 3, 7));
 console.log(memoizeAdd(1, 2, 3, 4));
