@@ -100,11 +100,13 @@ header {
   font-size: var(--fs--s);
   color: black;
   width: 60%;
+  height: 100%;
   position: absolute;
   right: 0px;
   padding-right: 25px;
   z-index: 1;
   overflow: scroll;
+  text-overflow: ellipsis;
 }
 
 .about-section .introduction .introduction--info h2 {
@@ -124,6 +126,8 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
   color: white;
   text-indent: 30px;
   border: 5px solid black;
@@ -250,6 +254,9 @@ header {
   width: 250px;
   height: 95%;
   border-radius: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-overflow: ellipsis;
   background: #424242;
   background: -webkit-gradient(linear, left top, right top, from(#474747), color-stop(31%, #333232), color-stop(48%, #242222), color-stop(64%, #222222), to(#101010));
   background: linear-gradient(90deg, #474747 0%, #333232 31%, #242222 48%, #222222 64%, #101010 100%);
@@ -287,8 +294,13 @@ header {
   -ms-flex-item-align: baseline;
       align-self: baseline;
   vertical-align: middle;
-  width: 10%;
-  height: 10%;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
   border-radius: 50%;
+}
+
+.card1--moving--info {
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=main.css.map */

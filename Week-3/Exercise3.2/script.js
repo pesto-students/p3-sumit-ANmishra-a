@@ -40,3 +40,21 @@ const bankBalance = function (args) {
 // console.log(bankBalance([1, 2, 3, 12, 5, 6]));
 console.log(bankBalance.apply(user1, [1, 2, 3, 12, 5, 6]));
 // console.log(bankBalance.apply(user2, [1, 12, 4, 12, 5, 6]));
+
+
+
+
+
+function createIncrement(){
+  let count = 0;
+  function increment(){
+      count++;
+  }
+  let message = {`Count is ${count}`;
+  function log(){
+      console.log(message);
+  }
+  return [increment,log];
+}
+const [increment,log]=createIncrement();
+}
