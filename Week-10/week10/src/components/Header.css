@@ -1,0 +1,14 @@
+.header-container {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  color: cornflowerblue;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+  /* justify-content: space-between; */
+}
+.header-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+}

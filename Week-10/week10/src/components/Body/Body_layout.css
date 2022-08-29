@@ -1,0 +1,22 @@
+.body-container {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+
+  margin-top: 20px;
+}
+.body-container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 50px;
+}
+.body-container__heading {
+  font-size: x-large;
+  font-weight: bold;
+}
+.body-container__description {
+  font-style: oblique;
+}

@@ -1,0 +1,37 @@
+.result-container {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 150px;
+  display: flex;
+  box-shadow: 10px 10px lightblue;
+}
+.Link-container {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+}
+.Link-container > p {
+  max-width: 450px;
+  overflow: hidden;
+  /* overflow-wrap: break-word; */
+}
+
+.Link_result {
+  display: flex;
+
+  justify-content: space-between;
+}
+#link {
+  color: rgb(45, 208, 208);
+}
+.Link_copy__button {
+  border-radius: 10px;
+  background-color: rgb(45, 208, 208);
+  color: white;
+  border: 1px solid rgb(57, 54, 54);
+}
