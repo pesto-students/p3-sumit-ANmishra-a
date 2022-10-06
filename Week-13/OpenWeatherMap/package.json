@@ -1,0 +1,17 @@
+{
+  "name": "openweathermap",
+  "version": "1.0.0",
+  "description": "open weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "anuj mishra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
+  }
+}
